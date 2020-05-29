@@ -1,0 +1,1904 @@
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: MyFirstFont;
+	src: url(Ed_Wood_Movies.ttf);
+}
+
+.topnav {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	padding: 1rem;
+}
+
+.topnav a {
+	font-family: calibri;
+	float: right;
+	display: block;
+	color: #6F6D6D;
+	text-align: center;
+	padding: 3rem 2rem;
+	text-decoration: none;
+	font-size: 2.5rem;
+}
+
+.topnav .icon {
+	display: none;
+	color: #6F6D6D;
+}
+
+.topnav a:hover, .dropbtn:hover {
+	color: black;
+	font-size: 3rem;
+}
+
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+
+.dropbtn {
+	background-color: white;
+	border: none;
+	outline: none;
+	font-family: calibri;
+	float: right;
+	display: block;
+	color: #6F6D6D;
+	text-align: center;
+	padding: 3rem 2rem;
+	text-decoration: none;
+	font-size: 2.5rem;
+	margin-top: -0.3rem;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #649D34;
+	width: 20rem;
+	border-radius: 2rem;
+	margin-top: 7rem;
+}
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 1.2rem 1.6rem;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {
+	color: #F5AA2F;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#fout {
+	color: white;
+}
+
+#active {
+	color: black;
+}
+
+#fb, #insta, #logo {
+	position: fixed;
+	z-index: 2;
+}
+
+#fb {
+	margin: -8rem 0 0 115rem;
+}
+
+#insta {
+	margin: -8rem 0 0 120.5rem;
+}
+
+#logo {
+	margin: -10rem 0 0 2rem;
+}
+
+#lid, #leden {
+	color: white;
+	font-size: 2rem;
+	background-color: #F5AA2F;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	margin: 1.5rem;
+	text-decoration: none;
+}
+
+#lid:hover {
+	background-color: #D76716;
+}
+
+.mySlides {
+	display: none;
+}
+
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin-top: 12rem;
+}
+
+.text {
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 6rem;
+	margin-top: -30rem;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.text {
+	color: white;
+}
+
+.text3 {
+	color: black;
+}
+
+.text6, .text3 {
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 6rem;
+	margin-top: -23rem;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.text6 {
+	color: white;
+}
+
+.text5 {
+	color: white;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 6rem;
+	margin-top: -12rem;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.text2 a, .text4 a {
+	color: #F5AA2F;
+	font-family: calibri;
+	font-size: 1.5rem;
+	margin: -15rem 0 0 70rem;
+	position: absolute;
+	text-decoration: none;
+}
+
+.text2 p, .text4 p {
+	font-family: calibri;
+	font-size: 1.5rem;
+	margin: -15rem 0 0 74rem;
+	position: absolute;
+	text-decoration: none;
+}
+
+.text2 p {
+	color: white;
+}
+
+.text4 p {
+	color: black;
+}
+
+.text2 a:hover {
+	color: white;
+}
+
+.text4 a:hover {
+	color: black;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.dot, .dot1 {
+	height: 1rem;
+	width: 1rem;
+	margin: 0 0.5rem;
+	background-color: #6F6D6D;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.2s ease;
+}
+
+.active {
+	background-color: black;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#leden:hover {
+	background-color: #D76716;
+}
+
+#welkom, #gidsen, #de {
+	font-family: calibri;
+	font-size: 2rem;
+	color: #E8394B;
+	text-align: center;
+}
+
+#welkom {
+	margin-top: 3rem;
+}
+
+#gidsen {
+	position: absolute;
+	margin: 3rem 0 0 78rem;
+}
+
+#de {
+	position: absolute;
+	margin: 3rem 0 0 4em;
+}
+
+#historie {
+	margin: 6rem 0 0 7rem;
+	position: absolute;
+}
+
+#frans {
+	margin: 6rem 0 0 78rem;
+	position: absolute;
+}
+
+#scouts, #frans, #historie {
+	font-family: MyFirstFont;
+	font-size: 2.5rem;
+	color: #9F2E39;
+	text-align: center;
+}
+
+#scouts {
+	margin-top: 2rem;
+}
+
+div.gallery {
+	margin: 5rem;
+	margin-top: 2rem;
+	float: left;
+	width: 18rem;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem 1rem 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.desc1, div.desc2, div.desc3, div.desc4, div.desc5 {
+	font-family: calibri;
+	font-size: 2rem;
+	color: white;
+	padding: 3rem;
+	text-align: center;
+	margin-top: 0;
+	border-radius: 0 0 1rem 1rem;
+}
+
+div.tesc1, div.tesc2, div.tesc3, div.tesc4, div.tesc5 {
+	font-family: MyFirstFont;
+	font-size: 0.8rem;
+	color: white;
+	text-align: center;
+	margin-top: -2rem;
+}
+
+div.desc1 {
+	background-color: #DFCD19;
+}
+
+div.desc2 {
+	background-color: #197B13;
+}
+
+div.desc3 {
+	background-color: #D76716;
+}
+
+div.desc4 {
+	background-color: #19288B;
+}
+
+div.desc5 {
+	background-color: #9A0018;
+}
+
+#maak {
+	font-family: MyFirstFont;
+	font-size: 1.5rem;
+	color: #F5AA2F;
+}
+
+#galerij {
+	text-decoration: none;
+	color: white;
+	font-size: 2rem;
+	background-color: #F5AA2F;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	margin: 1.5rem;
+}
+
+#galerij:hover {
+	background-color: #D76716;
+}
+
+#foto {
+	font-family: MyFirstFont;
+	font-size: 2.5rem;
+	margin-top: 2rem;
+	color: #9F2E39;
+	text-align: center;
+}
+
+.fotos {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.fotos img {
+	border-radius: 2rem;
+	padding: 0.5rem 0 0 0.5rem;
+}
+
+#bekijk, #upload, #hier {
+ 	font-family: calibri;
+	text-decoration: none;
+	color: white;
+	background-color: #F5AA2F;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	position: absolute;
+}
+
+#bekijk {
+	margin: 2rem 0 0 65rem;
+	font-size: 2rem;
+}
+
+#upload {
+	margin: 25rem 0 0 78rem;
+	font-size: 1.5rem;
+}
+
+#hier {
+	margin: 42rem 0 0 78rem;
+	font-size: 1.5rem;
+}
+
+#bekijk:hover, #upload:hover, #hier:hover {
+	background-color: #D76716;
+}
+
+.wij, .wij2, .wij3, .wij4, .wij5, .wij6, .wij7, .wij8, .wij9 {
+	font-size: 1.5rem;
+	font-family: calibri;
+	position: absolute;
+	line-height: 1.5;
+	margin-left: 78rem;
+}
+
+.wij a {
+	color: #649D34;
+}
+
+.wij, .wij6 {
+	margin-top: 11rem;
+}
+
+.wij2 {
+	margin-top: 19rem;
+}
+
+.wij3 {
+	margin-top: 23rem;
+}
+
+.wij4 {
+	margin-top: 34rem;
+}
+
+.wij5 {
+	margin-top: 38rem;
+}
+
+.wij7 {
+	margin-top: 17rem;
+}
+
+.wij8 {
+	margin-top: 32rem;
+}
+
+.wij9 {
+	font-weight: bold;
+	margin-top: 38rem;
+}
+
+#vies {
+	position: absolute;
+	margin: 3rem 0 0 9rem;
+}
+
+.bol1, .bol2, .bol3, .bol4 {
+	background-color: #F5AA2F;
+	font-family: calibri;
+	border: none;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5rem;
+}
+
+.bol1 {
+	margin: 51rem 0 0 78rem;
+}
+
+.bol2, .bol3, .bol4 {
+	margin: 1rem 0 0 78rem;
+}
+
+.bol5, .bol6, .bol7, .bol8 {
+	color: white;
+	background-color: white;
+	padding: 1.5rem;
+}
+
+.bol5 {
+	margin: 51rem 0 0 78rem;
+}
+
+.bol6, .bol7, .bol8 {
+	margin: 1rem 0 0 78rem;
+}
+
+.button1, .button2, .button3, .button4, .button5 {
+	border-radius: 1rem;
+}
+
+#naam, #nummer, #leef, #das {
+	font-size: 2rem;
+	font-family: calibri;
+	position: absolute;
+	margin: -4rem 0 0 86rem;
+}
+
+#naam2, #nummer2, #leef2, #das2 {
+	font-size: 1.5rem;
+	font-family: calibri;
+	margin: -1rem 0 2rem 86rem;
+	line-height: 1.5;
+}
+
+.dop, .marcel, .viert, .vzw, .lokaal, .raad, .kelder, .tak, .jarig, .moeze, .jong, .uren, .jubel, .school, .toet, .show, .online, .feest, .trapt, .site, .weten, .klein, .tweede, .derde, .vierde, .vijfde, .groot {
+	font-size: 1.5rem;
+	font-family: calibri;
+	position: absolute;
+	line-height: 1.5;
+	margin-left: 7rem;
+}
+
+.dop {
+	margin-top: 11rem;
+}
+
+.marcel {
+	margin-top: 15rem;
+}
+
+.klein, .tweede, .derde, .vierde, .vijfde, .groot {
+	margin-top: 4rem;
+}
+
+.viert {
+	margin-top: 18rem;
+}
+
+.vzw {
+	margin-top: 21rem;
+}
+
+.lokaal {
+	margin-top: 24rem;
+}
+
+.raad {
+	margin-top: 27rem;
+}
+
+.kelder {
+	margin-top: 30rem;
+}
+
+.tak {
+	margin-top: 33rem;
+}
+
+.jarig {
+	margin-top: 36rem;
+}
+
+.moeze {
+	margin-top: 39rem;
+}
+
+.jong {
+	margin-top: 42rem;
+}
+
+.uren {
+	margin-top: 45rem;
+}
+
+.jubel {
+	margin-top: 48rem;
+}
+
+.school {
+	margin-top: 51rem;
+}
+
+.toet {
+	margin-top: 54rem;
+}
+
+.show {
+	margin-top: 57rem;
+}
+
+.online {
+	margin-top: 60rem;
+}
+
+.feest {
+	margin-top: 63rem;
+}
+
+.trapt {
+	margin-top: 66rem;
+}
+
+.site {
+	margin-top: 69rem;
+}
+
+.weten {
+	margin-top: 73rem;
+}
+
+#meisje {
+	position: absolute;
+	margin: 3rem 0 0 80rem;
+}
+
+.footer {
+	margin-top: 10rem;
+	height: 46rem;
+	background-color: #1A581B;
+}
+
+#ons {
+	font-weight: bold;
+	font-family: MyFirstFont;
+	color: white;
+	font-size: 1.5rem;
+	margin: 4rem 0 0 47rem;
+	position: absolute;
+}
+
+#SF {
+	font-family: calibri;
+	color: white;
+	font-size: 1.5rem;
+	margin: 7rem 0 0 43rem;
+	position: absolute;
+	line-height: 1.5;
+}
+
+#adres {
+	font-weight: bold;
+	font-family: MyFirstFont;
+	color: white;
+	font-size: 1.5rem;
+	margin: 4rem 0 0 70rem;
+	position: absolute;
+}
+
+#merksem {
+	font-family: calibri;
+	color: white;
+	font-size: 1.5rem;
+	margin: 7rem 0 0 68rem;
+	position: absolute;
+	line-height: 1.5;
+}
+
+#contact {
+	font-weight: bold;
+	font-family: MyFirstFont;
+	color: white;
+	font-size: 1.5rem;
+	margin: 4rem 0 0 90rem;
+	position: absolute;
+}
+
+#groeps {
+	font-family: calibri;
+	color: white;
+	font-size: 1.5rem;
+	margin: 7rem 0 0 84rem;
+	position: absolute;
+	line-height: 1.5;
+}
+
+#nikki, #joren, #robbe, #jeroen {
+	font-family: calibri;
+	color: white;
+	font-size: 1.5rem;
+	position: absolute;
+	line-height: 1.5;
+}
+
+#nikki:hover, #joren:hover, #robbe:hover, #jeroen:hover {
+	color: #F5AA2F;
+}
+
+#nikki {
+	margin: 10rem 0 0 84rem;
+}
+
+#joren {
+	margin: 13rem 0 0 84rem;
+}
+
+#robbe {
+	margin: 16rem 0 0 84rem;
+}
+
+#jeroen {
+	margin: 19rem 0 0 84rem;
+}
+
+.vl {
+	border-top: 0.2rem solid #649D34;
+	width: 70rem;
+	position: absolute;
+	margin: -22rem 0 0 38rem;
+}
+
+#info {
+	font-family: calibri;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	margin: -19rem 0 0 62rem;
+}
+
+#info:hover {
+	color: #F5AA2F; 
+}
+
+#mail {
+	width: 17rem;
+	padding: 0.3rem;
+	position: absolute;
+	margin: -14rem 0 0 58rem;
+	border: none;
+	background-color: white;
+	border-radius: 0.5rem;
+}
+
+.button {
+	cursor: pointer;
+	background-color: #F5AA2F;
+	color: white;
+	padding: 0.3rem;
+	border: none;
+	width: 10rem;
+	font-size: 1.2rem;
+	border-radius: 0.5rem;
+	position: absolute;
+	margin: -14rem 0 0 76rem;
+}
+
+.button:hover {
+	background-color: #D76716;
+}
+
+#fb2 {
+	position: absolute;
+	margin: -8rem 0 0 67rem;
+}
+
+#insta2 {
+	position: absolute;
+	margin: -8rem 0 0 74rem;
+}
+
+.geel, .groen, .oranje, .blauw {
+	width: 100%;
+	height: 40rem;
+	position: absolute;
+	margin: 13rem 0 0 0;
+	z-index: -1;
+	opacity: 0.1;
+}
+
+.geel {
+	background-color: #DFCD19;
+}
+
+.groen {
+	background-color: #197B13;
+}
+
+.oranje {
+	background-color: #D76716;
+}
+
+.blauw {
+	background-color: #19288B;
+}
+
+div.tak1 {
+	float: left;
+	width: 18rem;
+	margin: 24rem 0 -3rem 14rem;
+}
+
+div.tak1 img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem 1rem 0 0;
+}
+
+div.desc6, div.desc7, div.desc8, div.desc9 {
+	font-family: calibri;
+	font-size: 2rem;
+	color: black;
+	padding: 3rem;
+	text-align: center;
+	background-color: white;
+	margin-top: 0;
+	border-radius: 0 0 1rem 1rem;
+}
+
+div.tesc9 {
+	color: black;
+	font-family: MyFirstFont;
+	font-size: 1rem;
+	text-align: center;
+	margin-top: -2.4rem;
+}
+
+.leiding {
+	color: black;
+	font-size: 2rem;
+	font-family: calibri;
+	margin: 15rem 0 -20rem 0;
+	text-align: center;
+}
+
+div.tak2 {
+	float: left;
+	width: 18rem;
+	margin: 24rem 0 -3rem 9rem;
+}
+
+div.tak2 img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem 1rem 0 0;
+}
+
+div.tak3 {
+	float: left;
+	width: 18rem;
+	margin: 24rem 0 -3rem 22rem;
+}
+
+div.tak3 img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem 1rem 0 0;
+}
+
+#jinner {
+	margin-top: 20rem;
+	margin-left: 7rem;
+}
+
+#balk {
+	background-color: #649D34;
+	width: 25rem;
+	height: 355rem;
+	border-radius: 2rem;
+	margin: 3rem 0 0 7rem;
+}
+
+.ploeg1, .ploeg2, .ploeg3, .ploeg4, .ploeg5, .ploeg6, .ploeg7 {
+	font-family: calibri;
+	font-size: 2rem;
+	color: white;
+	font-weight: bold;
+	margin-left: 12rem;
+}
+
+.ploeg1 {
+	margin-top: -352rem;
+}
+
+.pltxt {
+	margin: -2rem 0 0 44rem;
+	font-size: 1.5rem;
+	font-family: calibri;
+	line-height: 1.5;
+}
+
+#rol {
+	margin: 1rem 0 0 44rem;
+}
+
+.ploeg2, .ploeg3, .ploeg4, .ploeg5, .ploeg6, .ploeg7 {
+	margin-top: 3rem;
+}
+
+#banner {
+	opacity: 0.4; 
+}
+
+#vul {
+	font-family: calibri;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.form {
+	margin: 2rem auto 0;
+	width: 40rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: calibri;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 1rem;
+	margin: 1rem 0 2rem 0;
+	border: none;
+	background: #f1f1f1;
+	border-radius: 1rem;
+}
+
+select {
+	height: 4rem;
+}
+
+input[type=text]:focus, select:focus, textarea:focus, .knop:focus {
+	outline: none;
+}
+
+.knop {
+	cursor: pointer;
+	background-color: #F5AA2F;
+	color: white;
+	padding: 1.5rem;
+	border: none;
+	width: 50%;
+	font-size: 1.5rem;
+	border-radius: 1rem;
+}
+
+.knop:hover {
+	background-color: #D76716;
+}
+
+label {
+	color: black;
+}
+
+label b {
+	margin-left: 1rem;
+}
+
+#college {
+	text-align: center;
+	margin-left: 7rem;
+	font-size: 1.5rem;
+	font-family: calibri;
+	margin-top: 2rem;
+	line-height: 1.5;
+}
+
+#nikki2, #joren2, #robbe2, #jeroen2 {
+	font-family: calibri;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-left: 7rem;
+}
+
+#nikki2:hover, #joren2:hover, #robbe2:hover, #jeroen2:hover {
+	color: #F5AA2F;
+}
+
+div.tak4, div.tak6 {
+	float: left;
+	width: 18rem;
+	margin: 2rem 0 0 22rem;
+}
+
+div.tak4 img, div.tak5 img, div.tak6 img, div.tak7 img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+
+div.tak5, div.tak7 {
+ 	float: right;
+	width: 18rem;
+	margin: 2rem 23rem 0 0;
+}
+
+div.desc10, div.desc11, div.desc12 {
+	font-family: calibri;
+	font-size: 1rem;
+	color: black;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+#volgende, #volgende1, #volgende2 {
+	float: left;
+	font-size: 1.5rem;
+	margin: 23rem 0 0 -34rem;
+	font-family: calibri;
+	color: black;
+}
+
+#volgende:hover, #volgende1:hover, #volgende2:hover {
+	color: #F5AA2F;
+}
+
+#vorige, #vorige1, #vorige2 {
+	float: left;
+	font-size: 1.5rem;
+	margin: 23rem 0 0 -74rem;
+	font-family: calibri;
+	color: black;
+}
+
+#vorige:hover, #vorige1:hover, #vorige2:hover {
+	color: #F5AA2F;
+}
+
+#terug, #terug1, #terug2 {
+	float: left;
+	font-size: 1.5rem;
+	margin: 23rem 0 0 -54rem;
+	font-family: calibri;
+	color: black;
+}
+
+#terug:hover, #terug1:hover, #terug2:hover {
+	color: #F5AA2F;
+}
+
+.kleur {
+	width: 100%;
+	position: relative;
+	margin-top: 12rem;
+}
+
+#treffer, #boek {
+	margin: 10rem 0 0 7rem;
+}
+
+@supports (grid-area: auto) {
+	@media screen and (max-width: 900px) {
+		.topnav a:not(:first-child), .dropdown .dropbtn {
+			display: none;
+		}
+		.topnav a.icon {
+			float: right;
+			display: block;
+		}
+		.topnav.responsive {
+			position: absolute;
+		}
+		.topnav.responsive .icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.topnav.responsive a {
+			float: none;
+			display: block;
+			text-align: center;
+		}
+		.topnav.responsive .dropdown {
+			float: none;
+		}
+		.topnav.responsive .dropdown-content {
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.topnav.responsive .dropdown .dropbtn {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		#logo {
+			width: 20%;
+		}
+		#lid, #fb, #insta, #fout {
+			display: none;
+		}
+		.text {
+			font-size: 4rem;
+			margin-top: -19rem; 
+		}
+		.text6 {
+			margin-top: -17rem;
+		}
+		.text3 {
+			margin-top: -17rem;
+		}
+		.text2 {
+			margin: 5rem 0 0 -29rem;
+		}
+		.text4 {
+			margin: 5rem 0 0 -29rem;
+		}
+		.text5 {
+			font-size: 3.5rem;
+			margin: -7rem 0 0 3rem;
+		}
+		#leden, #galerij {
+			font-size: 2rem;
+			position: absolute;
+			margin: 1rem 0 0 -7rem;
+		}
+		#welkom {
+			margin-top: 1.5rem;
+		}
+		div.gallery {
+			margin: 2rem 0 3rem 13rem;
+			width: 24rem;
+		}
+		#bekijk {
+			margin-left: 38rem;
+		}
+		.footer {
+			height: 38rem;
+		}
+		#ons {
+			margin: 4rem 0 0 20rem;
+		}
+		#SF {
+			margin: 7rem 0 0 15rem;
+		}
+		#adres {
+			margin: 4rem 0 0 42rem;
+		}
+		#merksem {
+			margin: 7rem 0 0 39rem;
+		}
+		#contact {
+			margin: 4rem 0 0 62rem;
+		}
+		#groeps {
+			margin: 7rem 0 0 57rem;
+		}
+		#nikki {
+			margin: 9rem 0 0 57rem;
+		}
+		#joren {
+			margin: 11rem 0 0 57rem;
+		}
+		#robbe {
+			margin: 13rem 0 0 57rem;
+		}
+		#jeroen {
+			margin: 15rem 0 0 57rem;
+		}
+		.vl {
+			margin: -19rem 0 0 11rem;
+		}
+		#info {
+			margin: -16rem 0 0 38rem;
+		}
+		#mail {
+			width: 15rem;
+			margin: -12rem 0 0 30rem;
+		}
+		.button {
+			margin: -12rem 0 0 46rem;
+		}
+		#fb2 {
+			width: 4%;
+			margin: -7rem 0 0 39rem;
+		}
+		#insta2 {
+			width: 4%;
+			margin: -7rem 0 0 45rem;
+		}
+		#vies {
+			width:42%;
+			margin: -4rem 0 0 1rem;
+		}
+		#gidsen {
+			margin: -4rem 0 0 42rem;
+		}
+		#frans {
+			font-size: 1.5rem;
+			margin: -1rem 0 0 42rem;
+		}
+		.wij, .wij2, .wij3, .wij4, .wij5 {
+			font-size: 1.4rem;
+			margin-left: 42rem;
+		}
+		.wij {
+			margin-top: 2rem;
+		}
+		.wij2 {
+			margin-top: 10rem;		 	
+		}
+		.wij3 {
+			margin-top: 14rem;
+		}
+		.wij4 {
+			margin-top: 24rem;
+		}
+		.wij5 {
+			margin-top: 28rem;
+		}
+		.bol1 {
+			margin: 35rem 0 0 1rem;
+		}
+		.bol2, .bol3, .bol4 {
+			margin: 1rem 0 0 1rem;
+		}
+		#naam, #nummer, #leef, #das {
+			margin: 1.5rem 0 0 1rem;
+		}
+		#naam2, #nummer2, #leef2, #das2 {
+			margin: 3.5rem 0 2rem 1rem;
+		}
+		#de {
+			margin: -4rem 0 0 2rem;
+		}
+		#historie {
+			margin: -1rem 0 0 2rem;
+		}
+		.dop {
+			margin: 5rem 0 0 2rem;
+		}
+		.marcel, .viert, .vzw, .lokaal, .raad, .kelder, .tak, .jarig, .moeze, .jong, .uren, .jubel, .school, .toet, .show, .online, .feest, .trapt, .site, .weten, .klein, .tweede, .derde, .vierde, .groot {
+			margin-left: 2rem;
+		}
+		.marcel {
+			margin-top: 9rem;
+		}
+		.viert {
+			margin-top: 12rem;
+		}
+		.vzw {
+			margin-top: 15rem;
+		}
+		.lokaal {
+			margin-top: 18rem;
+		}
+		.raad {
+			margin-top: 21rem;
+		}
+		.kelder {
+			margin-top: 24rem;
+		}
+		.tak {
+			margin-top: 27rem;
+		}
+		.jarig {
+			margin-top: 30rem;
+		}
+		.moeze {
+			margin-top: 33rem;
+		}
+		.jong {
+			margin-top: 36rem;
+		}
+		.uren {
+			margin-top: 39rem;
+		}
+		.jubel {
+			margin-top: 42rem;
+		}
+		.school {
+			margin-top: 45rem;
+		}
+		.toet {
+			margin-top: 48rem;
+		}
+		.show {
+			margin-top: 51rem;
+		}
+		.online {
+			margin-top: 54rem;
+		}
+		.feest {
+			margin-top: 57rem;
+		}
+		.trapt {
+			margin-top: 60rem;
+		}
+		.site {
+			margin-top: 63rem;
+		}
+		.weten {
+			margin-top: 69rem;
+		}
+		#meisje {
+			width: 35%;
+			margin-left: 55rem;
+		}
+		.bol5, .bol6, .bol7, .bol8 {
+			padding: 2rem;
+			margin-left: -4rem;
+		}
+		.klein, .tweede, .derde, .vierde, .groot {
+			margin-top: -2rem;
+		}
+		.vijfde {
+			margin-top: 2rem;
+			margin-left: 2rem;
+		}
+		#jinner {
+			width: 60%;
+			margin: 13rem 0 0 2rem;
+		}
+		.geel, .groen, .oranje {
+			margin-top: 8rem;
+			height: 33rem;
+		}
+		.blauw {
+			height: 38rem;
+			margin-top: 8rem;
+		}
+		.leiding {
+			margin-top: 15rem;
+		}
+		div.tak1 {
+			width: 16rem;
+			margin: 23rem 0 0 5rem;
+		}
+		div.tak2 {
+			width: 12rem;
+			margin: 23rem 0 0 5rem;
+		}
+		div.tak3 {
+			width: 19rem;
+			margin: 23rem 0 0 9rem;
+		}
+		div.tak4 {
+			width: 19rem;
+			margin: 2rem 0 4rem 2rem;
+		}
+		div.tak5 {
+			float: left;
+			width: 19rem;
+			margin: 2rem 0 4rem 2rem;
+		}
+		div.tak6 {
+			width: 18rem;
+			margin: 2rem 0 2rem 6rem;
+		}
+		div.tak7 {
+			width: 18rem;
+			margin: 2rem 12rem 2rem -6rem;
+		}
+		div.desc6, div.desc7, div.desc8, div.desc9 {
+			padding: 2rem;
+		}
+		div.tesc9 {
+			font-size: 0.8rem;
+			margin-top: -1.5rem;
+		}
+		#balk {
+			background-color: white;
+			width: 10rem;
+			height: 300rem;
+			margin: -9rem 0 0 2rem;
+		}
+		.ploeg1 {
+			color: black;
+			font-size: 1.5rem;
+			margin: -293rem 0 0 2rem;
+		}
+		.ploeg2, .ploeg3, .ploeg4, .ploeg5, .ploeg6, .ploeg7 {
+			color: black;
+			font-size: 1.5rem;
+			margin: 3rem 0 0 2rem;
+		}
+		.pltxt {
+			margin-left: 14rem;
+		}
+		#rol {
+			margin-left: 14rem;
+		}
+		iframe {
+			width: 100%;
+		}
+		#vul {
+			margin-top: -3rem;
+		}
+		#treffer {
+			margin: 5rem 0 0 2rem;
+			width: 50rem;
+		}
+		#boek {
+			margin: 8rem 0 0 2rem;
+			width: 80rem;
+			height: 60rem;
+		}
+		#vorige {
+			margin: 23rem 0 0 -56rem;
+		}
+		#volgende {
+			margin: -2rem 0 0 48rem;
+		}
+		#terug {
+			margin: 23rem 0 0 -36rem;
+		}
+		#volgende1 {
+			margin: -1.5rem 0 0 48rem;
+		}
+		#terug1 {
+			margin: -1.5rem 0 0 27rem;
+		}
+		#vorige2 {
+			margin: 23rem 0 0 -9em;
+		}
+		#volgende2 {
+			margin: 23rem 0 0 9rem;
+		}
+		#terug2 {
+			margin: 23rem 0 0 6rem;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.topnav a:not(:first-child), .dropdown .dropbtn {
+			display: none;
+		}
+		.topnav a.icon {
+			float: right;
+			display: block;
+		}
+		.topnav.responsive {
+			position: absolute;
+		}
+		.topnav.responsive .icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.topnav.responsive a {
+			float: none;
+			display: block;
+			text-align: center;
+		}
+		.topnav.responsive .dropdown {
+			float: none;
+		}
+		.topnav.responsive .dropdown-content {
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.topnav.responsive .dropdown .dropbtn {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		.topnav {
+			padding: 0;
+		}
+		.topnav a, .dropbtn {
+			font-size: 2rem;
+		}
+		.topnav a:hover, .dropbtn:hover {
+			font-size: 2.5rem;
+		}
+		#logo {
+			margin-top: -8rem; 
+			width: 25%;
+		}
+		#fb, #insta, #fout, #lid {
+			display: none;
+		}
+		.slideshow-container {
+			margin-top: 10rem;
+		}
+		#leden {
+			font-size: 1.5rem;
+			position: absolute;
+			margin: 1rem 0 0 -6rem;
+			padding: 1rem;
+		}
+		#galerij {
+			font-size: 1.5rem;
+			position: absolute;
+			margin: 0 0 0 -5rem;
+			padding: 1rem;
+		}
+		.text {
+			font-size: 2rem;
+			margin-top: -10rem;
+		}
+		.text3 {
+			font-size: 2.5rem;
+			margin-top: -9rem;
+		}
+		.text6 {
+			font-size: 2.5rem;
+			margin-top: -9rem;
+		}
+		.text4 {
+			font-size: 1rem;
+			margin: 10rem 0 0 -49rem;
+		}
+		.text2 {
+			font-size: 1rem;
+			margin: 10rem 0 0 -49rem;
+		}
+		.text5 {
+			font-size: 2rem;
+			margin: -4rem 0 0 3rem;
+		}
+		.dot, .dot1 {
+			height: 0.5rem;
+			width: 0.5rem;
+		}
+		#welkom {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+		}
+		#scouts, #foto {
+			font-size: 2rem;
+			margin-top: 1rem;
+		}
+		div.gallery {
+			margin: 2rem 0 3rem 7rem;
+			width: 14rem;
+		}
+		.slideshow {
+			margin-top: 4rem;
+		}
+		#maak {
+			font-size: 1rem;
+		}
+		#foto {
+			font-size: 2rem;
+			margin-top: 2rem;
+		}
+		.fotos img {
+			width: 30%;
+		}
+		#bekijk {
+			padding: 1.5rem;
+			font-size: 1.5rem;
+			margin-left: 20rem;
+		}
+		.footer {
+			height: 38rem;
+		}
+		#ons {
+			font-size: 1.2rem;
+			margin: 4rem 0 0 6rem;
+		}
+		#SF {
+			font-size: 1.2rem;
+			margin: 6rem 0 0 2rem;
+		}
+		#adres {
+			font-size: 1.2rem;
+			margin: 4rem 0 0 23rem;
+		}
+		#merksem {
+			font-size: 1.2rem;
+			margin: 6rem 0 0 21rem;
+		}
+		#contact {
+			font-size: 1.2rem;
+			margin: 4rem 0 0 38rem;
+		}
+		#groeps {
+			font-size: 1.2rem;
+			margin: 6rem 0 0 33rem;
+		}
+		#nikki, #joren, #robbe, #jeroen {
+			font-size: 1.2rem;
+		}
+		#nikki {
+			margin: 8rem 0 0 33rem;
+		}
+		#joren {
+			margin: 10rem 0 0 33rem;
+		}
+		#robbe {
+			margin: 12rem 0 0 33rem;
+		}
+		#jeroen {
+			margin: 14rem 0 0 33rem;
+		}
+		.vl {
+			width: 40rem;
+			margin: -20rem 0 0 5rem;
+		}
+		#info {
+			font-size: 1.2rem;
+			margin: -17rem 0 0 20rem;
+		}
+		#mail {
+			width: 15rem;
+			margin: -14rem 0 0 12rem;
+		}
+		.button {
+			margin: -14rem 0 0 28rem;
+		}
+		#fb2 {
+			width: 5%;
+			margin: -9rem 0 0 20rem;
+		}
+		#insta2 {
+			width: 5%;
+			margin: -9rem 0 0 26rem;
+		}
+		#vies {
+			width:40%;
+			margin: -6rem 0 0 2rem;
+		}
+		#frans {
+			font-size: 1.5rem;
+			margin: -3rem 0 0 24rem;
+		}
+		#gidsen {
+			font-size: 1.5rem;
+			margin: -6rem 0 0 24rem;
+		}
+		.wij, .wij2, .wij3, .wij4, .wij5, .wij6, .wij7, .wij8, .wij9 {
+			font-size: 1.4rem;
+			margin-left: 24rem;
+		}
+		.wij, .wij6 {
+			margin-top: 1rem;
+		}
+		.wij2 {
+			margin-top: 15rem;		 	
+		}
+		.wij3 {
+			margin-top: 19rem;
+		}
+		.wij4 {
+			margin-top: 40rem;
+		}
+		.wij5 {
+			margin-top: 46rem;
+		}
+		.wij7 {
+			margin-top: 9rem;
+		}
+		.wij8 {
+			margin-top: 30rem;
+		}
+
+		.bol1 {
+			margin: 19rem 0 0 2rem;
+		}
+		.bol2, .bol3, .bol4 {
+			margin: 1rem 0 0 2rem;
+		}
+		#naam, #nummer, #leef, #das {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 1.5rem 0 0 2rem;
+		}
+		#naam2, #nummer2, #leef2, #das2 {
+			font-size: 1.2rem;
+			margin: 3.5rem 0 2rem 2rem;
+		}
+		#de {
+			font-size: 1.5rem;
+			margin: -6rem 0 0 2rem;
+		}
+		#historie {
+			font-size: 1.5rem;
+			margin: -3rem 0 0 2rem;
+		}
+		.dop {
+			margin: 1rem 0 0 2rem;
+		}
+		.marcel, .viert, .vzw, .lokaal, .raad, .kelder, .tak, .jarig, .moeze, .jong, .uren, .jubel, .school, .toet, .show, .online, .feest, .trapt, .site, .weten, .klein, .tweede, .derde, .vierde, .groot {
+			font-size: 1.4rem;
+			margin-left: 2rem;
+		}
+		.marcel {
+			margin-top: 6rem;
+		}
+		.viert {
+			margin-top: 9rem;
+		}
+		.vzw {
+			margin-top: 12rem;
+		}
+		.lokaal {
+			margin-top: 15rem;
+		}
+		.raad {
+			margin-top: 18rem;
+		}
+		.kelder {
+			margin-top: 21rem;
+		}
+		.tak {
+			margin-top: 24rem;
+		}
+		.jarig {
+			margin-top: 27rem;
+		}
+		.moeze {
+			margin-top: 30rem;
+		}
+		.jong {
+			margin-top: 33rem;
+		}
+		.uren {
+			margin-top: 36rem;
+		}
+		.jubel {
+			margin-top: 39rem;
+		}
+		.school {
+			margin-top: 42rem;
+		}
+		.toet {
+			margin-top: 45rem;
+		}
+		.show {
+			margin-top: 48rem;
+		}
+		.online {
+			margin-top: 51rem;
+		}
+		.feest {
+			margin-top: 54rem;
+		}
+		.trapt {
+			margin-top: 57rem;
+		}
+		.site {
+			margin-top: 62rem;
+		}
+		.weten {
+			margin-top: 69rem;
+		}
+		#meisje {
+			display: none;
+		}
+		.bol5, .bol6, .bol7, .bol8 {
+			padding: 3rem;
+			margin-left: -4rem;
+		}
+		#upload {
+			margin: 22rem 0 0 30rem;
+		}
+		#hier {
+			margin: 45rem 0 0 30rem;
+		}
+		.klein, .tweede, .derde, .vierde {
+			font-size: 1.2rem;
+			margin-top: -7rem;
+		}
+		.vijfde {
+			font-size: 1.2rem;
+			margin-top:2rem;
+		}
+		.groot {
+			font-size: 1.1rem;
+			margin-top: -7rem;
+		}
+		.geel, .groen, .oranje {
+			margin-top: 2rem;
+			height: 26rem;
+		}
+		.blauw {
+			margin-top: 2rem;
+			height: 28rem;
+		}
+		.leiding {
+			font-size: 1.5rem;
+			margin-top: 14rem;
+		}
+		div.tak1 {
+			width: 11rem;
+			margin: 23rem 0 0 1rem;
+		}
+		div.tak2 {
+			width: 7.2rem;
+			margin: 23rem 0 0 2.5rem;
+		}
+		div.tak3 {
+			width: 13rem;
+			margin: 23rem 0 0 3rem;
+		}
+		div.desc6, div.desc7, div.desc8, div.desc9 {
+			font-size: 1.5rem;
+			padding: 2rem;
+		}
+		div.tesc9 {
+			font-size: 0.5rem;
+			margin-top: -1.5rem;
+		}
+		#jinner {
+			width: 90%;
+			margin: 5rem 0 0 2rem;
+		}
+		#balk {
+			background-color: white;
+			width: 10rem;
+			height: 300rem;
+			margin: -9rem 0 0 2rem;
+		}
+		.ploeg1 {
+			color: black;
+			font-size: 1.5rem;
+			margin: -298rem 0 0 2rem;
+		}
+		.ploeg2, .ploeg3, .ploeg4, .ploeg5, .ploeg6, .ploeg7 {
+			color: black;
+			font-size: 1.5rem;
+			margin: 3rem 0 0 2rem;
+		}
+		.pltxt {
+			margin-left: 14rem;
+		}
+		#rol {
+			margin-left: 14rem;
+		}
+		iframe {
+			width: 100%;
+		}
+		#vul {
+			font-size: 1.2rem;
+			margin-top: -8rem;
+		}
+		#college {
+			font-size: 1.2rem;
+			margin-top: -8rem;
+		}
+		#nikki2 {
+			font-size: 1.2rem;
+		}
+		#joren2 {
+			font-size: 1.2rem;
+		}
+		#robbe2 {
+			font-size: 1.2rem;
+		}
+		#jeroen2 {
+			margin-bottom: 10rem;
+			font-size: 1.2rem;
+		}
+		#treffer {
+			margin: 1rem 0 0 2rem;
+			width: 45rem;
+		}
+		#boek {
+			margin: 7rem 0 0 2rem;
+			width: 46rem;
+			height: 40rem;
+		}
+		.kleur {
+			margin-top: 10rem;
+		}
+		div.tak4 {
+			width: 14rem;
+			margin: 2rem 0 4rem 2rem;
+		}
+		div.tak5 {
+			float: left;
+			width: 14rem;
+			margin: 2rem 0 4rem 2rem;
+		}
+		div.tak6 {
+			width: 14rem;
+			margin: 2rem 0 4rem 2rem;
+		}
+		div.tak7 {
+			width: 14rem;
+			margin: 2rem 0 4rem 2rem;
+		}
+		#vorige {
+			margin: 2rem 0 0 4rem;
+		}
+		#volgende {
+			margin: -1.5rem 0 0 36rem;
+		}
+		#terug {
+			margin: 2rem 0 0 8rem;
+		}
+		#volgende1 {
+			margin: 2rem 0 0 36rem;
+		}
+		#terug1 {
+			margin: -1.5rem 0 0 20rem;
+		}
+		#vorige2 {
+			margin: 18rem 0 0 -7em;
+		}
+		#volgende2 {
+			margin: -1.5rem 0 0 36rem;
+		}
+		#terug2 {
+			margin: 18rem 0 0 3rem;
+		}
+	}
+}
